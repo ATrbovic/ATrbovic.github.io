@@ -1,70 +1,82 @@
-<html>
-  <head>
-    <title>Experience</title>
-    <style>
-      h1 {
-        text-align: center;
-        font-size: 36px;
-        font-family: Arial, sans-serif;
-        margin-bottom: 40px;
-      }
-      h2 {
-        font-size: 24px;
-        font-family: Arial, sans-serif;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        margin-bottom: 20px;
-      }
-      li {
-        margin-bottom: 40px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Experience</h1>
+<style>
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  <div class="position">
-  <h2>Undergradute Researcher</h2>
-  <h2>Florida state University</h2>
-  <p>Dates Worked: October 2022 - Present</p>
-  <p>Description: </p>
-  <a href="https://www.fsu.edu/">
-    <img src="fsuLogo.png" width="200" height="200" alt="FSU Logo">
-  </a>
+  .experience-item {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .experience-description {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .experience-dates {
+    text-align: right;
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  .experience-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+</style>
+
+<h2>Experience</h2>
+<div class="experience-container">
+  <div class="experience-item">
+    <img class="experience-image" src="fsuLogo.png" alt="FSU Logo">
+    <h3>Florida State University</h3>
+    <p class="experience-dates"> Oct 2022 - Present</p>
+    <div class="experience-description">
+      <h4>Undergradute Researcher</h4>
+      <p>Description of the position...</p>
+    </div>
+  </div>
+
+  
+  <div class="experience-container">
+    <div class="experience-item">
+      <img class="experience-image" src="emerson.png" alt="Emerson Logo">
+      <h3>Emerson</h3>
+      <p class="experience-dates"> Jan 2022 - Aug 2022</p>
+      <div class="experience-description">
+        <h4>QA Engineering Intern</h4>
+        <p>Description of the position...</p>
+      </div>
+    </div>
+  
+  
+    <div class="experience-container">
+      <div class="experience-item">
+        <img class="experience-image" src="launch.png" alt="Company Logo">
+        <h3>Launch Academy</h3>
+        <p class="experience-dates"> Mar 2021 - Aug 2021</p>
+        <div class="experience-description">
+          <h4>Apprentice Fullstack Developer</h4>
+          <p>Description of the position...</p>
+        </div>
+      </div>
+  
+      <div class="experience-container">
+        <div class="experience-item">
+          <img class="experience-image" src="gtech.png" alt="Company Logo">
+          <h3>Graph Tech USA</h3>
+          <p class="experience-dates">Jun 2017 - Aug 2017</p>
+          <div class="experience-description">
+            <h4>Mechanical Engineering Intern </h4>
+            <p>Description of the position...</p>
+          </div>
+        </div>
+
 </div>
-
-<div class="position">
-  <h2>QA Engineering Intern</h2>
-  <h2>Emerson</h2>
-  <p>Dates Worked: Jan 2022 - Aug 2022</p>
-  <p>Description: </p>
-  <a href="https://www.emerson.com/en-us">
-    <img src="emerson.png" width="200" height="200" alt="Emerson logo">
-  </a>
-</div>
-
-<div class="position">
-  <h2>Apprentice Full Stack Developer</h2>
-  <h2>Launch Academy</h2>
-  <p>Dates Worked: Mar 2021 - Aug 2021</p>
-  <p>Description:.</p>
-  <a href="https://launchacademy.com/">
-    <img src="launch.png" width="200" height="200" alt="Launch Logo">
-  </a>
-</div>
-
-<div class="position">
-  <h2>Mechanical Engineering Intern</h2>
-  <h2>Graph Tech USA</h2>
-  <p>Dates Worked: Jun 2017 - Aug 2017</p>
-  <p>Description:.</p>
-  <a href="https://graphtech.us/">
-    <img src="gtech.png" width="200" height="200" alt="Launch Logo">
-  </a>
-</div>
-
-  </body>
-</html>
