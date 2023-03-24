@@ -53,17 +53,23 @@
       .experience-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
       }
 
       .experience-item {
-        width: 50%;
+        width: 48%;
         padding: 20px;
         box-sizing: border-box;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .experience-item h3 {
+        margin-top: 0;
       }
 
       .experience-description {
-        background-color: #f0f0f0;
-        border-radius: 10px;
         padding: 20px;
         box-sizing: border-box;
         width: 100%;
@@ -86,14 +92,14 @@
   <body>
     <header>
       <h1>Alex Trbovic</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
     <main>
       <h2>Experience</h2>
       <div class="experience-container">
@@ -106,9 +112,7 @@
             <p>Description of the position...</p>
           </div>
         </div>
-      </div>
 
-      <div class="experience-container">
         <div class="experience-item">
           <img class="experience-image" src="emerson.png" alt="Emerson Logo">
           <h3>Emerson</h3>
@@ -119,8 +123,8 @@
           </div>
         </div>
       </div>
-  
-    <div class="experience-container">
+
+      <div class="experience-container">
       <div class="experience-item">
         <img class="experience-image" src="launch.png" alt="Company Logo">
         <h3>Launch Academy</h3>
