@@ -1,7 +1,83 @@
 <html>
   <head>
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      /* General styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #333;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        color: #fff;
+        margin: 0;
+      }
+
+      /* Navigation styles */
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 1rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1rem;
+      }
+
+      nav ul li a:hover {
+        color: #aaa;
+      }
+
+      /* Main content styles */
+      main {
+        padding: 2rem;
+      }
+
+      /* Home section styles */
+      #home {
+        text-align: center;
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .links a {
+        margin: 0 1rem;
+      }
+
+      .links img {
+        width: 32px;
+        height: 32px;
+      }
+
+      /* About section styles */
+      #about {
+        margin-top: 2rem;
+      }
+
+      .about-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -40,9 +116,3 @@
     </main>
   </body>
 </html>
-<style>
-  .about-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-</style>
