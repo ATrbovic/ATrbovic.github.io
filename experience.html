@@ -63,10 +63,26 @@
         margin-bottom: 20px;
       }
 
-      .experience-item h3 {
+      .experience-item h3,
+      .experience-dates {
         margin-top: 0;
       }
 
+      .experience-image {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+
+      /* Company info container */
+      .company-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      /* Description styles */
       .experience-description {
         padding: 20px;
         box-sizing: border-box;
@@ -77,27 +93,9 @@
       .experience-dates {
         text-align: right;
         font-style: italic;
-        margin-top: 10px;
+        margin: 0;
       }
 
-      .experience-image {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
-      }
-
-    /* Company info container */
-
-      .company-info {
-        display: flex;
-        align-items: center; /* Vertically align the company name and dates worked */
-        justify-content: space-between; /* Space between company name and dates worked */
-        width: 100%; /* Take up the full width of the experience-item */
-      }
-
-      .experience-dates {
-        margin: 0; /* Reset the margin to align with the company name */
-      }
     </style>
   </head>
   <body>
