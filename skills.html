@@ -6,28 +6,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills - Alex Trbovic</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="theme-toggle.js"></script>
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  
   <header>
-    <h1>Alex Trbovic</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1>Alex Trbovic</h1>
+      <p class="subtitle">PhD Student • Quantum Game Theory Researcher • Industrial Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="writings.html">Writings</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
   <main>
     <section class="section-card">
-      <h2>Skills & Technologies</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, C++, Java, JavaScript, LabVIEW</li>
-        <li><strong>Databases:</strong> SQL, PostgreSQL, Oracle DB</li>
-        <li><strong>Tools:</strong> AWS, Docker, Git, Jira, JUnit, PGAdmin, Slurm</li>
-        <li><strong>Libraries/Frameworks:</strong> React.js, Node.js, TensorFlow, Pandas, NumPy, Matplotlib</li>
-      </ul>
+      <h2>Technical Skills & Expertise</h2>
+      
+      <div class="card">
+        <h3>Programming Languages</h3>
+        <div class="skills-category">
+          <strong>Primary Languages:</strong>
+          Python, C++, Java, JavaScript, MATLAB
+        </div>
+        <div class="skills-category">
+          <strong>Specialized Languages:</strong>
+          LabVIEW, SQL, R, Shell/Bash Scripting
+        </div>
+        <div class="skills-category">
+          <strong>Markup & Styling:</strong>
+          HTML5, CSS3, LaTeX, Markdown
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Quantum Computing & Research</h3>
+        <div class="skills-category">
+          <strong>Quantum Frameworks:</strong>
+          Qiskit, Cirq, PennyLane
+        </div>
+        <div class="skills-category">
+          <strong>Research Areas:</strong>
+          Quantum Game Theory, QAOA, Variational Quantum Eigensolvers, Nonlocal Games
+        </div>
+        <div class="skills-category">
+          <strong>Simulation Tools:</strong>
+          Quantum Circuit Simulators, Noise Models, Quantum State Tomography
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Machine Learning & Data Science</h3>
+        <div class="skills-category">
+          <strong>ML Frameworks:</strong>
+          TensorFlow, PyTorch, Scikit-learn, Keras
+        </div>
+        <div class="skills-category">
+          <strong>Data Processing:</strong>
+          Pandas, NumPy, SciPy, Dask
+        </div>
+        <div class="skills-category">
+          <strong>Visualization:</strong>
+          Matplotlib, Plotly, Seaborn, Dash, D3.js
+        </div>
+        <div class="skills-category">
+          <strong>Specialized ML:</strong>
+          Computer Vision (CNNs), Time Series Analysis, Statistical Modeling
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Software Engineering & Development</h3>
+        <div class="skills-category">
+          <strong>Web Technologies:</strong>
+          React.js, Node.js, Express.js, RESTful APIs
+        </div>
+        <div class="skills-category">
+          <strong>Frameworks:</strong>
+          Spring Boot, Flask, Django, SFML
+        </div>
+        <div class="skills-category">
+          <strong>Testing & Quality:</strong>
+          JUnit, pytest, Selenium, Test-Driven Development
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Database & Infrastructure</h3>
+        <div class="skills-category">
+          <strong>Databases:</strong>
+          PostgreSQL, MySQL, Oracle DB, MongoDB
+        </div>
+        <div class="skills-category">
+          <strong>Cloud Platforms:</strong>
+          AWS (EC2, S3, Lambda), Google Cloud Platform
+        </div>
+        <div class="skills-category">
+          <strong>DevOps & Tools:</strong>
+          Docker, Git, Jira, Jenkins, Slurm (HPC)
+        </div>
+        <div class="skills-category">
+          <strong>Development Tools:</strong>
+          VS Code, IntelliJ IDEA, Jupyter Notebooks, PGAdmin
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Research & Analytics</h3>
+        <div class="skills-category">
+          <strong>Statistical Analysis:</strong>
+          Hypothesis Testing, Regression Analysis, Bayesian Methods
+        </div>
+        <div class="skills-category">
+          <strong>Optimization:</strong>
+          Linear Programming, Nonlinear Optimization, Metaheuristics
+        </div>
+        <div class="skills-category">
+          <strong>Scientific Computing:</strong>
+          High-Performance Computing, Parallel Processing, Numerical Methods
+        </div>
+        <div class="skills-category">
+          <strong>Instrumentation:</strong>
+          Spectroscopy Equipment, Data Acquisition Systems, Laboratory Automation
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Professional Skills</h3>
+        <div class="skills-category">
+          <strong>Project Management:</strong>
+          Agile Methodologies, Scrum, Cross-functional Team Leadership
+        </div>
+        <div class="skills-category">
+          <strong>Communication:</strong>
+          Technical Writing, Academic Presentations, Scientific Publications
+        </div>
+        <div class="skills-category">
+          <strong>Collaboration:</strong>
+          Interdisciplinary Research, Industry-Academia Partnerships, Mentoring
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card" style="margin-top: 2rem;">
+      <h2>Certifications & Continuous Learning</h2>
+      <p>I'm committed to staying current with rapidly evolving technologies, particularly in quantum computing and machine learning. I regularly participate in online courses, attend conferences, and engage with the research community to expand my knowledge and skills.</p>
+      
+      <div class="skills-category">
+        <strong>Current Learning Focus:</strong>
+        Advanced Quantum Algorithms, Deep Reinforcement Learning, Quantum Error Correction
+      </div>
+      
+      <div class="skills-category">
+        <strong>Professional Development:</strong>
+        Conference Presentations, Peer Review, Open Source Contributions
+      </div>
     </section>
   </main>
 </body>

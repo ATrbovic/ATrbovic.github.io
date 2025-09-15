@@ -6,48 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience - Alex Trbovic</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="theme-toggle.js"></script>
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  
   <header>
-    <h1>Alex Trbovic</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1>Alex Trbovic</h1>
+      <p class="subtitle">PhD Student • Quantum Game Theory Researcher • Industrial Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="writings.html">Writings</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
   <main>
     <section class="section-card">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Raymond James – Software Engineering Intern</strong> (May 2024 – Aug 2024)<br>
-        • Developed and maintained enterprise-level web apps using Java and Spring Boot.<br>
-        • Created APIs improving data retrieval by 25%.<br>
-        • Used JUnit to cut production bugs by 37%.</li>
-        <br>
-        <li><strong>Florida State University – Graduate Researcher</strong> (Dec 2024 – Present)<br>
-        • Simulated quantum circuits for strategic optimization in quantum games using Qiskit.<br>
-        • Focus on nonlocal game strategies such as CHSH.</li>
-        <br>
-        <li><strong>Team FSU – Data Scientist</strong> (Aug 2023 – Present)<br>
-        • Built CNN for tackler prediction in sports using TensorFlow.<br>
-        • Scraped and analyzed large-scale NFL data with Python and Selenium.</li>
-        <br>
-        <li><strong>Undergraduate Researcher – LabVIEW Spectroscopy</strong> (Sept 2022 – May 2024)<br>
-        • Built Python dashboards for photoluminescence, absorption, and Raman data.<br>
-        • Boosted data collection speed by 80% via LabVIEW apps.</li>
-        <br>
-        <li><strong>FAMU-FSU College of Engineering – NSF REU Intern</strong> (May 2023 – Aug 2023)<br>
-        • Designed interactive C++ NFL replay visualizer using SFML.<br>
-        • Integrated PostgreSQL DB to reduce runtime by 63%.</li>
-        <br>
-        <li><strong>Emerson Electric – QA Intern</strong> (Jan 2022 – Aug 2022)<br>
-        • Conducted hardware/software testing improving battery life by 15%.<br>
-        • Collaborated across Engineering, QA, and Product teams.</li>
-      </ul>
+      <h2>Professional Experience</h2>
+      
+      <div class="experience-item">
+        <div class="experience-title">Graduate Researcher</div>
+        <div class="experience-period">Florida State University • December 2024 – Present</div>
+        <div class="experience-details">
+          <ul>
+            <li>Designed and simulated quantum circuits to explore strategy optimizations in multi-party quantum games, utilizing Qiskit and Python for implementation</li>
+            <li>Completed IBM Qiskit courses to develop a deep understanding of quantum circuit design, quantum algorithms, and their applications in quantum games</li>
+            <li>Investigating optimal strategies for nonlocal games such as the CHSH game and beyond, leveraging quantum entanglement to improve outcomes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-title">Software Engineering Intern</div>
+        <div class="experience-period">Raymond James • St Petersburg, Florida • May 2024 – August 2024</div>
+        <div class="experience-details">
+          <ul>
+            <li>Developed and maintained enterprise-level web applications used by financial advisors to analyze international settlements using Java, Angular, Spring Boot, Maven, and Gradle, ensuring high performance and scalability</li>
+            <li>Optimized REST API endpoints by implementing pagination and database indexing, reducing response time by 25%</li>
+            <li>Conducted thorough unit testing using JUnit, resulting in a 30% reduction in production bugs and enhanced reliability</li>
+            <li>Contributed to the development of a trade clearance application that processed millions of dollars in international settlements daily, supporting a team of 25 financial analysts in optimizing trade reconciliation and decision-making</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-title">Data Scientist</div>
+        <div class="experience-period">Florida State University • Tallahassee, Florida • August 2023 – December 2024</div>
+        <div class="experience-details">
+          <ul>
+            <li>Engineered a convolutional neural network via TensorFlow to calculate a "threatening index," representing the probability of a Defensive Team player acting as a tackler in real-time sports scenarios</li>
+            <li>Cleaned, processed, and analyzed over ten gigabytes of data in .csv format with Python, extracting vital information and preparing data to be trained on a convolutional neural network via TensorFlow</li>
+            <li>Implemented a tackling probability visualization to present NFL Databowl findings to stakeholders; utilized NumPy, Pandas, and Matplotlib</li>
+            <li>Created a Selenium web scraper to collect NFL players' statistics such as total tackles, years in the NFL, and other key metrics for the 2018 - 2023 seasons, scraping over 3,000 pages for data</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-title">Undergraduate Researcher</div>
+        <div class="experience-period">Florida State University • Tallahassee, Florida • September 2022 – May 2024</div>
+        <div class="experience-details">
+          <ul>
+            <li>Led the development of insightful dashboards used to process, analyze, and visualize absorption, photoluminescence, and Raman data, using Python, Pandas, and Matplotlib</li>
+            <li>Developed a spectroscopy application using LabVIEW that significantly enhanced the speed of spectral data collection by 80%, improving overall research efficiency</li>
+            <li>Developed bash scripts to automate job submission for FSU's high-performance computing cluster using Slurm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-title">NSF-REU Software Engineering Intern: NFL replay visualizer</div>
+        <div class="experience-period">FAMU-FSU College of Engineering • Tallahassee, Florida • May 2023 – August 2023</div>
+        <div class="experience-details">
+          <ul>
+            <li>Updated the architecture of a C++ 17 application to incorporate PostgreSQL, reducing application runtime by 63%</li>
+            <li>Leveraged Pandas and Matplotlib to analyze and visualize NFL data, extracting key trends to support decision-making</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-title">QA Engineering Intern</div>
+        <div class="experience-period">Emerson Electric • Palm Beach Gardens, Florida • January 2022 – August 2022</div>
+        <div class="experience-details">
+          <ul>
+            <li>Conducted hardware and software validation testing on IoT sensors used in shipping containers, optimizing power efficiency and extending battery life by 15% through data analysis with SQL, VBA, and Python</li>
+            <li>Collaborated with cross-functional teams including Engineering, Quality Assurance, and Sales to ensure products met customer requirements and were delivered on time</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 </body>
