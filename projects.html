@@ -6,33 +6,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects - Alex Trbovic</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="theme-toggle.js"></script>
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  
   <header>
-    <h1>Alex Trbovic</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1>Alex Trbovic</h1>
+      <p class="subtitle">PhD Student • Quantum Game Theory Researcher • Industrial Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="writings.html">Writings</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
   <main>
     <section class="section-card">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Dynamic Tackler Identification</strong><br>
-        • NFL AI system to identify the most likely tackler using CNNs. <br>
-        • Tools: TensorFlow, Selenium, Python<br>
-        <a href="https://www.kaggle.com/code/alextrbovic/team-fsu-dynamic-tackler-identification">Kaggle Notebook</a></li>
-        <br>
-        <li><strong>NFL Visualizer</strong><br>
-        • C++ & SFML-based NFL replay analyzer with PostgreSQL backend.<br>
-        <a href="https://github.com/ATrbovic/NFL-visualizer">GitHub Repository</a></li>
-      </ul>
+      <h2>Featured Projects</h2>
+      
+      <div class="project-item">
+        <div class="project-title">Dynamic Tackler Identification System</div>
+        <p>An advanced machine learning system designed to predict the most likely tackler in NFL plays using real-time player positioning data. The system employs convolutional neural networks to process complex spatial-temporal relationships and provide tactical insights for coaching staff and analysts.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Real-time processing of multi-dimensional player tracking data</li>
+          <li>CNN architecture optimized for spatial pattern recognition</li>
+          <li>Integration with NFL play-by-play data for comprehensive analysis</li>
+          <li>Interactive visualization of prediction confidence and contributing factors</li>
+        </ul>
+        
+        <p><strong>Technologies:</strong> TensorFlow, Python, Selenium, Pandas, NumPy, Matplotlib</p>
+        
+        <div class="project-links">
+          <a href="https://www.kaggle.com/code/alextrbovic/team-fsu-dynamic-tackler-identification" target="_blank">View on Kaggle</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">NFL Replay Visualizer</div>
+        <p>An interactive C++ application built with SFML for comprehensive analysis of NFL game data. The system provides real-time visualization of player movements, strategic formations, and play development with integrated database support for historical analysis.</p>
+        
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Real-time 2D visualization of player movements and formations</li>
+          <li>PostgreSQL database integration for efficient data storage and retrieval</li>
+          <li>Interactive timeline controls for play-by-play analysis</li>
+          <li>Custom rendering engine optimized for sports data visualization</li>
+          <li>Export capabilities for coaching presentations and analysis reports</li>
+        </ul>
+        
+        <p><strong>Performance Improvements:</strong> 63% reduction in data analysis runtime through optimized database queries and efficient rendering algorithms.</p>
+        
+        <p><strong>Technologies:</strong> C++, SFML, PostgreSQL, CMake</p>
+        
+        <div class="project-links">
+          <a href="https://github.com/ATrbovic/NFL-visualizer" target="_blank">GitHub Repository</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Quantum Game Theory Simulator</div>
+        <p>A quantum computing simulation environment for exploring strategic optimization in nonlocal games. This research project investigates how quantum entanglement and superposition can provide strategic advantages in competitive scenarios, particularly focusing on CHSH games.</p>
+        
+        <p><strong>Research Applications:</strong></p>
+        <ul>
+          <li>Simulation of quantum strategies in Bell games and CHSH scenarios</li>
+          <li>Analysis of quantum vs. classical strategic advantages</li>
+          <li>Optimization of quantum circuit parameters for maximum strategic benefit</li>
+          <li>Investigation of noise effects on quantum strategic performance</li>
+        </ul>
+        
+        <p><strong>Technologies:</strong> Qiskit, Python, NumPy, Matplotlib, Jupyter Notebooks</p>
+        
+        <div class="project-links">
+          <a href="#" style="opacity: 0.6; cursor: not-allowed;">Research in Progress</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Spectroscopy Data Analysis Suite</div>
+        <p>A comprehensive Python-based analysis platform for materials characterization using photoluminescence, absorption, and Raman spectroscopy data. The suite includes automated data processing, statistical analysis, and interactive visualization tools.</p>
+        
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>Automated peak detection and fitting algorithms</li>
+          <li>Statistical analysis and uncertainty quantification</li>
+          <li>Interactive dashboards for real-time data exploration</li>
+          <li>Integration with LabVIEW acquisition systems</li>
+          <li>Batch processing capabilities for large datasets</li>
+        </ul>
+        
+        <p><strong>Impact:</strong> 80% improvement in data collection and analysis efficiency, enabling higher throughput materials research.</p>
+        
+        <p><strong>Technologies:</strong> Python, LabVIEW, Pandas, SciPy, Plotly, Dash</p>
+      </div>
     </section>
+
+    <!-- <section class="section-card" style="margin-top: 2rem;">
+      <h2>Open Source Contributions</h2>
+      <p>I actively contribute to open-source projects related to quantum computing, data science, and scientific computing. My contributions focus on improving documentation, adding features, and fixing bugs in projects that support the broader research community.</p>
+      
+      <p>Areas of contribution include:</p>
+      <ul>
+        <li><strong>Quantum Computing Libraries:</strong> Documentation improvements and example notebooks</li>
+        <li><strong>Scientific Python Packages:</strong> Bug fixes and performance optimizations</li>
+        <li><strong>Educational Resources:</strong> Tutorial development and code examples</li>
+      </ul>
+      
+      <div class="project-links">
+        <a href="https://github.com/ATrbovic" target="_blank">View GitHub Profile</a>
+      </div>
+    </section> -->
   </main>
 </body>
 </html>
