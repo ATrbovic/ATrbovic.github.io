@@ -2,33 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  /* Light theme - cream and paper aesthetic */
-  --bg-primary: #faf8f5;
-  --bg-secondary: #f5f2ed;
-  --bg-paper: #fffef9;
-  --text-primary: #2c2925;
-  --text-secondary: #5c5853;
+  /* Light theme - parchment aesthetic */
+  --bg-primary: #fdf7e7;
+  --bg-secondary: #f9f1dd;
+  --bg-paper: rgba(255, 255, 255, 0.6);
+  --text-primary: #3d2f1e;
+  --text-secondary: #4a3c2b;
   --text-accent: #8b6f47;
-  --border-light: rgba(139, 111, 71, 0.15);
-  --border-medium: rgba(139, 111, 71, 0.25);
-  --shadow-soft: rgba(44, 41, 37, 0.08);
-  --shadow-medium: rgba(44, 41, 37, 0.12);
+  --border-light: rgba(0, 0, 0, 0.1);
+  --border-medium: rgba(0, 0, 0, 0.2);
+  --shadow-soft: rgba(0, 0, 0, 0.15);
+  --shadow-medium: rgba(0, 0, 0, 0.25);
   --accent-color: #d4a574;
   --accent-hover: #c19660;
 }
 
 [data-theme='dark'] {
-  /* Dark theme - sophisticated black and cream */
-  --bg-primary: #1a1816;
-  --bg-secondary: #252220;
-  --bg-paper: #2d2a27;
+  /* Dark theme - sophisticated dark parchment */
+  --bg-primary: #1a1612;
+  --bg-secondary: #221e18;
+  --bg-paper: rgba(45, 40, 35, 0.8);
   --text-primary: #f5f2ed;
   --text-secondary: #d4d0c7;
   --text-accent: #d4a574;
   --border-light: rgba(213, 207, 199, 0.1);
   --border-medium: rgba(213, 207, 199, 0.2);
-  --shadow-soft: rgba(0, 0, 0, 0.2);
-  --shadow-medium: rgba(0, 0, 0, 0.3);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.4);
   --accent-color: #d4a574;
   --accent-hover: #e6b885;
 }
@@ -40,15 +40,24 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
   position: relative;
+  margin: 0;
+  /* Parchment-like background with texture */
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.04) 2px, transparent 2px),
+    linear-gradient(45deg, rgba(210,180,140,0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(210,180,140,0.05) 25%, transparent 25%);
+  background-size: 8px 8px, 16px 16px, 60px 60px, 60px 60px;
+  background-position: 0 0, 8px 8px, 0 0, 30px 30px;
 }
 
-/* Paper texture overlay */
+/* Additional texture overlay for enhanced parchment effect */
 body::before {
   content: '';
   position: fixed;
@@ -57,9 +66,9 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(139, 111, 71, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 111, 71, 0.02) 0%, transparent 50%),
-    radial-gradient(circle at 40% 80%, rgba(139, 111, 71, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(210, 180, 140, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(210, 180, 140, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(210, 180, 140, 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -107,7 +116,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -175,9 +184,9 @@ main {
 .card {
   background: var(--bg-paper);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 2.5rem;
-  box-shadow: 0 8px 40px var(--shadow-soft);
+  box-shadow: 0 6px 12px var(--shadow-soft);
   margin-bottom: 2rem;
   transition: all 0.3s ease;
   position: relative;
@@ -198,7 +207,7 @@ main {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 60px var(--shadow-medium);
+  box-shadow: 0 12px 24px var(--shadow-medium);
   border-color: var(--border-medium);
 }
 
@@ -206,8 +215,14 @@ main {
   opacity: 1;
 }
 
+.card h1 {
+  font-size: 2.2em;
+  color: var(--text-primary);
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
+}
+
 .card h2 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -216,7 +231,7 @@ main {
 }
 
 .card h3 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
   font-size: 1.4rem;
   color: var(--text-accent);
   margin-bottom: 1rem;
@@ -224,21 +239,21 @@ main {
 
 .card p {
   color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.1em;
+  line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .section-card {
   background: var(--bg-paper);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 2.5rem;
-  box-shadow: 0 8px 40px var(--shadow-soft);
+  box-shadow: 0 6px 12px var(--shadow-soft);
 }
 
 .section-card h2 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Georgia', serif, 'Crimson Text', serif;
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-primary);
