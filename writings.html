@@ -6,6 +6,68 @@
   <title>Writings - Alex Trbovic</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="theme-toggle.js"></script>
+  <style>
+    /* Two-column grid for desktop, stacked on mobile */
+    .writings-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+      .writings-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .writings-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    
+    .writings-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    
+    .writings-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .writings-list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .writings-list a:hover {
+      color: var(--primary-600);
+    }
+    
+    .writings-title {
+      flex: 1;
+      font-weight: 500;
+    }
+    
+    .writings-date {
+      color: var(--text-tertiary);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    
+    .empty-state {
+      color: var(--text-tertiary);
+      font-style: italic;
+      text-align: center;
+      padding: 2rem 0;
+    }
+  </style>
 </head>
 <body>
   <button id="theme-toggle" aria-label="Toggle theme"></button>
@@ -29,27 +91,62 @@
   <main>
     <section class="section-card">
       <h2>Writings & Publications</h2>
-      <p style="text-align: center; color: var(--text-secondary); font-style: italic; margin-bottom: 2rem;">Where I'll share my thoughts on quantum computing and game theory.</p>
+      <p style="text-align: center; color: var(--text-secondary); font-style: italic; margin-bottom: 2rem;">Exploring quantum computing, game theory, and strategic optimization.</p>
       
-      <div class="card">
-        <h3>Coming Soon</h3>
-        <p>I'm currently focused on my doctoral research in quantum game theory and strategic optimization. As I develop insights and findings, I'll share my thoughts, research notes, and academic writings here.</p>
+      <div class="writings-grid">
+        <!-- Publications & Working Papers -->
+        <div class="card">
+          <h3>Publications & Working Papers</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Academic research and ongoing work</p>
+          
+          <ul class="writings-list">
+            <li>
+              <a href="#">
+                <span class="writings-title">Barren Plateaus in Minimax Quantum Games: Training Dynamics on Adversarial Landscapes</span>
+                <span class="writings-date">In Progress</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="writings-title">Many-Body Physics as a Non-Cooperative Game: Nash States and Local Objective Landscapes</span>
+                <span class="writings-date">In Progress</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="writings-title">Variational Quantum Algorithms for Dynamic Equilibria</span>
+                <span class="writings-date">In Progress</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         
-        <p>Topics I plan to explore include:</p>
-        <ul>
-          <li><strong>Quantum Game Theory:</strong> Strategic advantages in nonlocal games and CHSH scenarios</li>
-          <li><strong>Quantum Computing Applications:</strong> Optimization problems in industrial engineering</li>
-          <li><strong>Research Methodology:</strong> Interdisciplinary approaches to quantum strategy</li>
-          <li><strong>Technical Insights:</strong> Implementation challenges and solutions in quantum simulations</li>
-        </ul>
-        
-        <p>Stay tuned for updates as my research progresses!</p>
+        <!-- Personal Writings & Essays -->
+        <div class="card">
+          <h3>Personal Writings & Essays</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Explorations in tech, philosophy, and game theory</p>
+          
+          <ul class="writings-list">
+            <!-- Example structure - replace with actual writings -->
+            <!-- <li>
+              <a href="essay1.html">
+                <span class="writings-title">On Quantum Entanglement and Strategy</span>
+                <span class="writings-date">Jan 2026</span>
+              </a>
+            </li> -->
+          </ul>
+          
+          <p class="empty-state">Essays and thoughts coming soon.</p>
+        </div>
       </div>
       
       <div class="card">
         <h3>Contact for Collaborations</h3>
         <p>Interested in discussing research collaborations, quantum computing applications, or game theory projects? I'm always open to connecting with fellow researchers and practitioners.</p>
-        <p>Feel free to reach out through the <a href="index.html#contact" style="color: var(--accent-color); text-decoration: none;">contact form</a> or connect with me on <a href="https://linkedin.com/in/alextrbovic" style="color: var(--accent-color); text-decoration: none;">LinkedIn</a>.</p>
+        <p style="margin-top: 1.5rem;">
+          <a href="index.html#contact" class="btn btn-primary" style="display: inline-block; margin-right: 1rem;">Get in Touch</a>
+          <a href="https://linkedin.com/in/alextrbovic" class="btn btn-secondary" style="display: inline-block;">Connect on LinkedIn</a>
+        </p>
       </div>
     </section>
   </main>
