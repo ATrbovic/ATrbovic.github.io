@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMin slice">
+  <g fill="#1a2f06" stroke="none">
+
+    <!-- ======== LEFT CANOPY ======== -->
+
+    <!-- Main trunk/limb running along top-left edge -->
+    <path d="M -40 -25 C 20 -5 100 -8 190 -10 C 280 -13 370 -7 455 8 C 460 13 458 22 450 20 C 368 4 278 -2 190 0 C 100 2 20 5 -40 -14 Z" opacity="0.88"/>
+
+    <!-- Left vertical side trunk -->
+    <path d="M -18 -25 C -8 45 2 120 -3 198 C -8 268 5 328 16 382 C 8 388 0 386 -8 381 C -20 326 -32 265 -28 196 C -23 118 -34 43 -44 -25 Z" opacity="0.85"/>
+
+    <!-- Left branch arm 1: sweeps diagonally to ~(295, 180) -->
+    <path d="M 75 -4 C 115 35 168 88 222 136 C 260 168 286 180 294 185 C 285 194 272 192 258 183 C 228 167 196 151 158 118 C 105 70 52 19 36 -12 C 50 -17 63 -12 75 -4 Z" opacity="0.82"/>
+
+    <!-- Sub-branch from arm 1 at ~y=105: goes right -->
+    <path d="M 155 98 C 195 82 242 74 286 82 C 308 87 325 98 328 107 C 320 115 304 108 285 101 C 242 91 196 100 158 116 Z" opacity="0.74"/>
+
+    <!-- Left branch arm 2: broader sweep to ~(455, 162) -->
+    <path d="M 185 -6 C 236 28 308 72 370 112 C 412 138 442 152 458 162 C 451 172 438 170 422 161 C 404 150 373 135 328 110 C 265 70 192 26 148 -10 C 160 -15 173 -12 185 -6 Z" opacity="0.77"/>
+
+    <!-- Sub-branch from arm 2 dropping down from ~(335, 110) -->
+    <path d="M 332 108 C 327 148 330 190 338 228 C 344 252 352 266 354 273 C 345 278 336 276 330 270 C 324 262 316 247 312 222 C 305 184 302 142 308 102 Z" opacity="0.70"/>
+
+    <!-- Left branch arm 3: horizontal sweep to center ~(648, 58) -->
+    <path d="M 378 2 C 435 18 510 34 572 45 C 614 53 642 57 655 60 C 651 69 636 70 612 63 C 570 52 496 37 428 20 C 382 10 350 0 340 -9 C 352 -14 365 -9 378 2 Z" opacity="0.74"/>
+
+    <!-- Thin tendril from arm 3 toward center -->
+    <path d="M 648 56 C 672 46 695 38 715 35 C 696 41 673 42 651 50 Z" opacity="0.62"/>
+
+    <!-- ======== LEFT LEAF CLUSTERS ======== -->
+
+    <!-- Dense cluster at top-left corner -->
+    <ellipse cx="18" cy="-35" rx="92" ry="46" opacity="0.84" transform="rotate(-10 18 -35)"/>
+    <ellipse cx="55" cy="-18" rx="74" ry="38" opacity="0.76" transform="rotate(6 55 -18)"/>
+    <ellipse cx="-8" cy="-8" rx="62" ry="32" opacity="0.72" transform="rotate(-4 -8 -8)"/>
+    <ellipse cx="30" cy="5" rx="55" ry="28" opacity="0.65" transform="rotate(8 30 5)"/>
+
+    <!-- Cluster along upper flat trunk ~x=210 -->
+    <ellipse cx="215" cy="-22" rx="84" ry="40" opacity="0.80" transform="rotate(-6 215 -22)"/>
+    <ellipse cx="252" cy="-8" rx="68" ry="34" opacity="0.72" transform="rotate(9 252 -8)"/>
+    <ellipse cx="188" cy="-8" rx="62" ry="30" opacity="0.68" transform="rotate(-3 188 -8)"/>
+
+    <!-- Cluster along upper flat trunk ~x=390 -->
+    <ellipse cx="388" cy="-18" rx="72" ry="36" opacity="0.74" transform="rotate(-8 388 -18)"/>
+    <ellipse cx="417" cy="-5" rx="58" ry="28" opacity="0.66" transform="rotate(5 417 -5)"/>
+    <ellipse cx="362" cy="-3" rx="54" ry="26" opacity="0.64"/>
+
+    <!-- Arm 1 tip cluster ~(292, 184) -->
+    <ellipse cx="300" cy="179" rx="78" ry="55" opacity="0.80" transform="rotate(14 300 179)"/>
+    <ellipse cx="270" cy="195" rx="62" ry="44" opacity="0.70" transform="rotate(-6 270 195)"/>
+    <ellipse cx="322" cy="198" rx="56" ry="40" opacity="0.67" transform="rotate(9 322 198)"/>
+    <ellipse cx="282" cy="156" rx="52" ry="36" opacity="0.62" transform="rotate(-12 282 156)"/>
+
+    <!-- Arm 1 sub-branch tip ~(328, 105) -->
+    <ellipse cx="334" cy="99" rx="68" ry="40" opacity="0.77" transform="rotate(-7 334 99)"/>
+    <ellipse cx="358" cy="110" rx="54" ry="32" opacity="0.67" transform="rotate(11 358 110)"/>
+    <ellipse cx="314" cy="113" rx="50" ry="30" opacity="0.64"/>
+
+    <!-- Arm 2 tip cluster ~(456, 162) -->
+    <ellipse cx="462" cy="158" rx="76" ry="52" opacity="0.77" transform="rotate(16 462 158)"/>
+    <ellipse cx="435" cy="172" rx="60" ry="42" opacity="0.68" transform="rotate(-9 435 172)"/>
+    <ellipse cx="484" cy="175" rx="54" ry="38" opacity="0.64" transform="rotate(6 484 175)"/>
+
+    <!-- Arm 2 sub-branch drop tip ~(348, 272) -->
+    <ellipse cx="352" cy="276" rx="65" ry="48" opacity="0.74" transform="rotate(-14 352 276)"/>
+    <ellipse cx="326" cy="290" rx="52" ry="40" opacity="0.64"/>
+    <ellipse cx="372" cy="292" rx="50" ry="36" opacity="0.62" transform="rotate(9 372 292)"/>
+
+    <!-- Left vertical trunk bottom cluster ~y=375 -->
+    <ellipse cx="8" cy="370" rx="60" ry="44" opacity="0.75" transform="rotate(-16 8 370)"/>
+    <ellipse cx="-12" cy="385" rx="50" ry="37" opacity="0.65"/>
+    <ellipse cx="28" cy="382" rx="52" ry="40" opacity="0.68" transform="rotate(11 28 382)"/>
+
+    <!-- Arm 3 far tip cluster ~(650, 58) -->
+    <ellipse cx="658" cy="50" rx="82" ry="44" opacity="0.74" transform="rotate(-9 658 50)"/>
+    <ellipse cx="626" cy="63" rx="64" ry="36" opacity="0.64" transform="rotate(6 626 63)"/>
+    <ellipse cx="682" cy="65" rx="58" ry="32" opacity="0.60" transform="rotate(13 682 65)"/>
+
+    <!-- Scattered loose leaf pads along arm 2 path -->
+    <ellipse cx="400" cy="120" rx="50" ry="34" opacity="0.60" transform="rotate(7 400 120)"/>
+    <ellipse cx="185" cy="200" rx="44" ry="32" opacity="0.56" transform="rotate(-9 185 200)"/>
+    <ellipse cx="500" cy="42" rx="42" ry="26" opacity="0.52" transform="rotate(-6 500 42)"/>
+    <ellipse cx="525" cy="58" rx="36" ry="23" opacity="0.46" transform="rotate(5 525 58)"/>
+
+
+    <!-- ======== RIGHT CANOPY ======== -->
+
+    <!-- Main trunk/limb running along top-right edge -->
+    <path d="M 1480 -25 C 1420 -5 1340 -8 1250 -10 C 1160 -13 1070 -7 985 8 C 980 13 982 22 990 20 C 1072 4 1162 -2 1250 0 C 1340 2 1420 5 1480 -14 Z" opacity="0.88"/>
+
+    <!-- Right vertical side trunk -->
+    <path d="M 1458 -25 C 1448 45 1438 120 1443 198 C 1448 268 1435 328 1424 382 C 1432 388 1440 386 1448 381 C 1460 326 1472 265 1468 196 C 1463 118 1474 43 1484 -25 Z" opacity="0.85"/>
+
+    <!-- Right branch arm 1: sweeps diagonally to ~(1145, 180) -->
+    <path d="M 1365 -4 C 1325 35 1272 88 1218 136 C 1180 168 1154 180 1146 185 C 1155 194 1168 192 1182 183 C 1212 167 1244 151 1282 118 C 1335 70 1388 19 1404 -12 C 1390 -17 1377 -12 1365 -4 Z" opacity="0.82"/>
+
+    <!-- Sub-branch from right arm 1 ~y=105: goes left -->
+    <path d="M 1285 98 C 1245 82 1198 74 1154 82 C 1132 87 1115 98 1112 107 C 1120 115 1136 108 1155 101 C 1198 91 1244 100 1282 116 Z" opacity="0.74"/>
+
+    <!-- Right branch arm 2: broader sweep to ~(985, 162) -->
+    <path d="M 1255 -6 C 1204 28 1132 72 1070 112 C 1028 138 998 152 982 162 C 989 172 1002 170 1018 161 C 1036 150 1067 135 1112 110 C 1175 70 1248 26 1292 -10 C 1280 -15 1267 -12 1255 -6 Z" opacity="0.77"/>
+
+    <!-- Sub-branch from right arm 2 dropping down from ~(1105, 110) -->
+    <path d="M 1108 108 C 1113 148 1110 190 1102 228 C 1096 252 1088 266 1086 273 C 1095 278 1104 276 1110 270 C 1116 262 1124 247 1128 222 C 1135 184 1138 142 1132 102 Z" opacity="0.70"/>
+
+    <!-- Right branch arm 3: horizontal sweep to center ~(792, 58) -->
+    <path d="M 1062 2 C 1005 18 930 34 868 45 C 826 53 798 57 785 60 C 789 69 804 70 828 63 C 870 52 944 37 1012 20 C 1058 10 1090 0 1100 -9 C 1088 -14 1075 -9 1062 2 Z" opacity="0.74"/>
+
+    <!-- Thin tendril from right arm 3 toward center -->
+    <path d="M 792 56 C 768 46 745 38 725 35 C 744 41 767 42 789 50 Z" opacity="0.62"/>
+
+
+    <!-- ======== RIGHT LEAF CLUSTERS ======== -->
+
+    <!-- Dense cluster at top-right corner -->
+    <ellipse cx="1422" cy="-35" rx="92" ry="46" opacity="0.84" transform="rotate(10 1422 -35)"/>
+    <ellipse cx="1385" cy="-18" rx="74" ry="38" opacity="0.76" transform="rotate(-6 1385 -18)"/>
+    <ellipse cx="1448" cy="-8" rx="62" ry="32" opacity="0.72" transform="rotate(4 1448 -8)"/>
+    <ellipse cx="1410" cy="5" rx="55" ry="28" opacity="0.65" transform="rotate(-8 1410 5)"/>
+
+    <!-- Cluster along upper flat trunk ~x=1225 -->
+    <ellipse cx="1225" cy="-22" rx="84" ry="40" opacity="0.80" transform="rotate(6 1225 -22)"/>
+    <ellipse cx="1188" cy="-8" rx="68" ry="34" opacity="0.72" transform="rotate(-9 1188 -8)"/>
+    <ellipse cx="1252" cy="-8" rx="62" ry="30" opacity="0.68" transform="rotate(3 1252 -8)"/>
+
+    <!-- Cluster along upper flat trunk ~x=1052 -->
+    <ellipse cx="1052" cy="-18" rx="72" ry="36" opacity="0.74" transform="rotate(8 1052 -18)"/>
+    <ellipse cx="1023" cy="-5" rx="58" ry="28" opacity="0.66" transform="rotate(-5 1023 -5)"/>
+    <ellipse cx="1078" cy="-3" rx="54" ry="26" opacity="0.64"/>
+
+    <!-- Arm 1 tip cluster ~(1148, 184) -->
+    <ellipse cx="1140" cy="179" rx="78" ry="55" opacity="0.80" transform="rotate(-14 1140 179)"/>
+    <ellipse cx="1170" cy="195" rx="62" ry="44" opacity="0.70" transform="rotate(6 1170 195)"/>
+    <ellipse cx="1118" cy="198" rx="56" ry="40" opacity="0.67" transform="rotate(-9 1118 198)"/>
+    <ellipse cx="1158" cy="156" rx="52" ry="36" opacity="0.62" transform="rotate(12 1158 156)"/>
+
+    <!-- Arm 1 sub-branch tip ~(1112, 105) -->
+    <ellipse cx="1106" cy="99" rx="68" ry="40" opacity="0.77" transform="rotate(7 1106 99)"/>
+    <ellipse cx="1082" cy="110" rx="54" ry="32" opacity="0.67" transform="rotate(-11 1082 110)"/>
+    <ellipse cx="1126" cy="113" rx="50" ry="30" opacity="0.64"/>
+
+    <!-- Arm 2 tip cluster ~(984, 162) -->
+    <ellipse cx="978" cy="158" rx="76" ry="52" opacity="0.77" transform="rotate(-16 978 158)"/>
+    <ellipse cx="1005" cy="172" rx="60" ry="42" opacity="0.68" transform="rotate(9 1005 172)"/>
+    <ellipse cx="956" cy="175" rx="54" ry="38" opacity="0.64" transform="rotate(-6 956 175)"/>
+
+    <!-- Arm 2 sub-branch drop tip ~(1092, 272) -->
+    <ellipse cx="1088" cy="276" rx="65" ry="48" opacity="0.74" transform="rotate(14 1088 276)"/>
+    <ellipse cx="1114" cy="290" rx="52" ry="40" opacity="0.64"/>
+    <ellipse cx="1068" cy="292" rx="50" ry="36" opacity="0.62" transform="rotate(-9 1068 292)"/>
+
+    <!-- Right vertical trunk bottom cluster ~y=375 -->
+    <ellipse cx="1432" cy="370" rx="60" ry="44" opacity="0.75" transform="rotate(16 1432 370)"/>
+    <ellipse cx="1452" cy="385" rx="50" ry="37" opacity="0.65"/>
+    <ellipse cx="1412" cy="382" rx="52" ry="40" opacity="0.68" transform="rotate(-11 1412 382)"/>
+
+    <!-- Arm 3 far tip cluster ~(790, 58) -->
+    <ellipse cx="782" cy="50" rx="82" ry="44" opacity="0.74" transform="rotate(9 782 50)"/>
+    <ellipse cx="814" cy="63" rx="64" ry="36" opacity="0.64" transform="rotate(-6 814 63)"/>
+    <ellipse cx="758" cy="65" rx="58" ry="32" opacity="0.60" transform="rotate(-13 758 65)"/>
+
+    <!-- Scattered loose leaf pads along right arm 2 path -->
+    <ellipse cx="1040" cy="120" rx="50" ry="34" opacity="0.60" transform="rotate(-7 1040 120)"/>
+    <ellipse cx="1255" cy="200" rx="44" ry="32" opacity="0.56" transform="rotate(9 1255 200)"/>
+    <ellipse cx="940" cy="42" rx="42" ry="26" opacity="0.52" transform="rotate(6 940 42)"/>
+    <ellipse cx="915" cy="58" rx="36" ry="23" opacity="0.46" transform="rotate(-5 915 58)"/>
+
+
+    <!-- ======== CENTRE CANOPY (where both arms 3 meet overhead) ======== -->
+
+    <!-- Central overhead cluster bridging both arm 3 tips ~x=720 -->
+    <ellipse cx="720" cy="-28" rx="108" ry="50" opacity="0.67" transform="rotate(-4 720 -28)"/>
+    <ellipse cx="696" cy="-8" rx="84" ry="40" opacity="0.60" transform="rotate(5 696 -8)"/>
+    <ellipse cx="746" cy="-8" rx="84" ry="40" opacity="0.60" transform="rotate(-5 746 -8)"/>
+    <ellipse cx="720" cy="12" rx="70" ry="34" opacity="0.55"/>
+
+    <!-- Fine lateral branches connecting arm 3 clusters to centre -->
+    <path d="M 655 58 C 672 48 690 40 712 37 C 692 44 674 44 656 52 Z" opacity="0.65"/>
+    <path d="M 785 58 C 768 48 750 40 728 37 C 748 44 766 44 784 52 Z" opacity="0.65"/>
+
+    <!-- Additional small leaf tufts scattered for naturalism -->
+    <ellipse cx="140" cy="248" rx="40" ry="30" opacity="0.56" transform="rotate(-13 140 248)"/>
+    <ellipse cx="412" cy="205" rx="46" ry="33" opacity="0.58" transform="rotate(9 412 205)"/>
+    <ellipse cx="1028" cy="205" rx="46" ry="33" opacity="0.58" transform="rotate(-9 1028 205)"/>
+    <ellipse cx="1300" cy="248" rx="40" ry="30" opacity="0.56" transform="rotate(13 1300 248)"/>
+
+    <!-- Wispy small hanging tufts mid-canopy -->
+    <ellipse cx="580" cy="68" rx="32" ry="20" opacity="0.46" transform="rotate(-5 580 68)"/>
+    <ellipse cx="612" cy="78" rx="28" ry="18" opacity="0.40" transform="rotate(7 612 78)"/>
+    <ellipse cx="860" cy="68" rx="32" ry="20" opacity="0.46" transform="rotate(5 860 68)"/>
+    <ellipse cx="828" cy="78" rx="28" ry="18" opacity="0.40" transform="rotate(-7 828 78)"/>
+
+  </g>
+</svg>

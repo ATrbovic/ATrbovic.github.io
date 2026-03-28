@@ -55,6 +55,33 @@
   --gradient-accent: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
 }
 
+[data-theme='sunny'] {
+  /* Sunny Theme — Natural Light Through Tree Branches */
+  --bg-primary: #faf5e9;
+  --bg-secondary: #f0e6cc;
+  --bg-tertiary: #e3d2ae;
+  --bg-card: rgba(255, 252, 238, 0.92);
+  --text-primary: #1c1006;
+  --text-secondary: #3b2a14;
+  --text-tertiary: #6a5030;
+  --primary-600: #496640;
+  --primary-700: #344f2e;
+  --secondary-500: #b5660c;
+  --secondary-600: #995508;
+  --accent-400: #e6b43c;
+  --accent-500: #d09618;
+  --accent-600: #b47c0a;
+  --success-500: #3a8838;
+  --border-light: #cebb96;
+  --border-medium: #b09e74;
+  --shadow-sm: rgba(38, 22, 4, 0.07);
+  --shadow-md: rgba(38, 22, 4, 0.13);
+  --shadow-lg: rgba(38, 22, 4, 0.20);
+  --shadow-xl: rgba(38, 22, 4, 0.28);
+  --gradient-primary: linear-gradient(135deg, #496640 0%, #b5660c 100%);
+  --gradient-accent: linear-gradient(135deg, #e6b43c 0%, #496640 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +111,75 @@ body::before {
   pointer-events: none;
   z-index: 0;
   opacity: 0.6;
+}
+
+/* Sunny mode: warm ambient light — soft glow from upper area as if sun is just out of frame */
+[data-theme='sunny'] body::before {
+  background:
+    radial-gradient(ellipse 120% 60% at 38% -5%, rgba(255, 243, 195, 0.90) 0%, rgba(250, 232, 160, 0.55) 35%, transparent 70%),
+    radial-gradient(ellipse at top, var(--bg-secondary) 0%, transparent 75%);
+  opacity: 1;
+}
+
+/* body::after is unused now that the SVG is injected as real DOM by tree-sway.js */
+body::after { content: none; }
+
+/* ── Per-weight-class sway animations ─────────────────────────────────────────
+   tree-sway.js splits every <path> into .ts-heavy / .ts-medium / .ts-light
+   groups based on stroke-width, so each class moves with its own timing and
+   amplitude — thick trunks barely shift, thin twigs swing freely.
+
+   transform-box: fill-box makes transform-origin relative to each group's own
+   bounding box so they all pivot from their own top-edge (branch attachment point).
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@keyframes ts-sway-heavy {
+  0%,  100% { transform: rotate(0deg)      translate(0px,  0px);   }
+  30%        { transform: rotate(0.22deg)   translate(2px,  0.8px); }
+  65%        { transform: rotate(-0.15deg)  translate(-1px, 0.4px); }
+}
+
+@keyframes ts-sway-medium {
+  0%,  100% { transform: rotate(0deg)     translate(0px,  0px);  }
+  22%        { transform: rotate(0.65deg)  translate(6px,  2px);  }
+  50%        { transform: rotate(-0.48deg) translate(-4px, 1px);  }
+  78%        { transform: rotate(0.35deg)  translate(3px, -0.8px);}
+}
+
+@keyframes ts-sway-light {
+  0%,  100% { transform: rotate(0deg)     translate(0px,   0px);  }
+  18%        { transform: rotate(1.3deg)   translate(12px,  4px);  }
+  42%        { transform: rotate(-0.95deg) translate(-8px,  2px);  }
+  67%        { transform: rotate(1.1deg)   translate(10px, -2.5px);}
+  87%        { transform: rotate(-0.55deg) translate(-4px,  1px);  }
+}
+
+/* Applied to SVG <g> elements injected by tree-sway.js */
+.ts-heavy {
+  transform-box: fill-box;
+  transform-origin: 12% 0%;
+  animation: ts-sway-heavy 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+.ts-medium {
+  transform-box: fill-box;
+  transform-origin: 15% 0%;
+  animation: ts-sway-medium 15s ease-in-out infinite;
+  animation-delay: -5.3s;
+  will-change: transform;
+}
+
+.ts-light {
+  transform-box: fill-box;
+  transform-origin: 20% 0%;
+  animation: ts-sway-light 10s ease-in-out infinite;
+  animation-delay: -8.7s;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ts-heavy, .ts-medium, .ts-light { animation: none; }
 }
 
 /* Theme toggle positioned in top right */
@@ -128,6 +224,10 @@ header {
 
 [data-theme='dark'] header {
   background: rgba(30, 41, 59, 0.8);
+}
+
+[data-theme='sunny'] header {
+  background: rgba(250, 242, 212, 0.88);
 }
 
 .header-content {
